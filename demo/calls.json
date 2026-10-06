@@ -1,0 +1,551 @@
+[
+ {
+  "call": {
+   "call_id": "ae105cce-d1b6-5a24-ac20-99732c01e5d4",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Dieses Gespräch wird aufgezeichnet, wenn Sie einverstanden sind. Ist das in Ordnung?\nuser: Ja, passt.\nagent: Danke. Es geht um Ihren Zählerstand für die Jahresabrechnung. Können Sie ihn heute ablesen?\nuser: Ja, mache ich heute Abend.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Dieses Gespräch wird aufgezeichnet, wenn Sie einverstanden sind. Ist das in Ordnung?"
+    },
+    {
+     "role": "user",
+     "content": "Ja, passt."
+    },
+    {
+     "role": "agent",
+     "content": "Danke. Es geht um Ihren Zählerstand für die Jahresabrechnung. Können Sie ihn heute ablesen?"
+    },
+    {
+     "role": "user",
+     "content": "Ja, mache ich heute Abend."
+    }
+   ],
+   "_label": "clean-de-consent",
+   "recording_url": "https://recordings.example/call.mp3"
+  }
+ },
+ {
+  "call": {
+   "call_id": "37640d85-f1d0-52ba-9a41-8442486bdd2d",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Hi, this is Mia, an AI assistant calling from Harbor Mutual. Is now a good time?\nuser: Yeah, go on.\nagent: Thanks. Your home policy renews on the first of November, and I can walk you through the new price.\nuser: Sure.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hi, this is Mia, an AI assistant calling from Harbor Mutual. Is now a good time?"
+    },
+    {
+     "role": "user",
+     "content": "Yeah, go on."
+    },
+    {
+     "role": "agent",
+     "content": "Thanks. Your home policy renews on the first of November, and I can walk you through the new price."
+    },
+    {
+     "role": "user",
+     "content": "Sure."
+    }
+   ],
+   "_label": "clean-en"
+  }
+ },
+ {
+  "call": {
+   "call_id": "1a3f6d19-afcd-510f-a60c-0a6d77464f5c",
+   "attempt": 1,
+   "direction": "inbound",
+   "from_number": "+4915155509876",
+   "to_number": "+4930555010",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "user: Hallo, ich rufe wegen meiner Rechnung an, die ist viel zu hoch.\nagent: Das tut mir leid, ich schaue mir Ihre Rechnung gleich an. Wie lautet Ihre Kundennummer?\nuser: 4471923.\nagent: [lookup_customer]\nagent: Danke. Kurz zur Info: Ich bin eine KI-Assistentin von Musterstadt Energie. Ihre Rechnung enthält eine Nachzahlung aus dem Vorjahr.",
+   "transcriptObject": [
+    {
+     "role": "user",
+     "content": "Hallo, ich rufe wegen meiner Rechnung an, die ist viel zu hoch."
+    },
+    {
+     "role": "agent",
+     "content": "Das tut mir leid, ich schaue mir Ihre Rechnung gleich an. Wie lautet Ihre Kundennummer?"
+    },
+    {
+     "role": "user",
+     "content": "4471923."
+    },
+    {
+     "role": "agent",
+     "toolActivity": "lookup_customer",
+     "toolParameters": {
+      "customer_number": "4471923"
+     }
+    },
+    {
+     "role": "agent",
+     "content": "Danke. Kurz zur Info: Ich bin eine KI-Assistentin von Musterstadt Energie. Ihre Rechnung enthält eine Nachzahlung aus dem Vorjahr."
+    }
+   ],
+   "_label": "caller-first-skipped-greeting"
+  }
+ },
+ {
+  "call": {
+   "call_id": "0eb8819e-f758-5e48-bf67-a38d0f1e171f",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "user: Hi, if you record your name and reason for calling, I'll see if this person is available.\nagent: Hallo, hier ist Lena, die KI-Assistentin von Musterstadt Energie, wegen Ihres Vertrags.\nuser: Hallo?\nagent: Hallo! Es geht um die Verlängerung Ihres Vertrags zum Januar.\nuser: Ah, okay.",
+   "transcriptObject": [
+    {
+     "role": "user",
+     "content": "Hi, if you record your name and reason for calling, I'll see if this person is available."
+    },
+    {
+     "role": "agent",
+     "content": "Hallo, hier ist Lena, die KI-Assistentin von Musterstadt Energie, wegen Ihres Vertrags."
+    },
+    {
+     "role": "user",
+     "content": "Hallo?"
+    },
+    {
+     "role": "agent",
+     "content": "Hallo! Es geht um die Verlängerung Ihres Vertrags zum Januar."
+    },
+    {
+     "role": "user",
+     "content": "Ah, okay."
+    }
+   ],
+   "_label": "ios-screening"
+  }
+ },
+ {
+  "call": {
+   "call_id": "44fdb8da-abe1-509b-b9ab-51c5c16a56ea",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag, hier ist Lena von Musterstadt Energie, ich bin eine\nuser: Ja, worum geht's denn?\nagent: Es geht um Ihren Abschlag, der ab November steigt.\nuser: Schon wieder?",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag, hier ist Lena von Musterstadt Energie, ich bin eine"
+    },
+    {
+     "role": "user",
+     "content": "Ja, worum geht's denn?"
+    },
+    {
+     "role": "agent",
+     "content": "Es geht um Ihren Abschlag, der ab November steigt."
+    },
+    {
+     "role": "user",
+     "content": "Schon wieder?"
+    }
+   ],
+   "_label": "barge-in"
+  }
+ },
+ {
+  "call": {
+   "call_id": "ad2317c1-ea7c-5b30-8df6-71577b2d78c8",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Hi, this is Mia from Harbor Mutual. Before we start, can you confirm your date of birth?\nuser: Sure, 14/03/1988.\nagent: Thanks. I'm an AI assistant, and I'm calling about your claim from last week.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hi, this is Mia from Harbor Mutual. Before we start, can you confirm your date of birth?"
+    },
+    {
+     "role": "user",
+     "content": "Sure, 14/03/1988."
+    },
+    {
+     "role": "agent",
+     "content": "Thanks. I'm an AI assistant, and I'm calling about your claim from last week."
+    }
+   ],
+   "_label": "data-first"
+  }
+ },
+ {
+  "call": {
+   "call_id": "7e67ab9a-29ee-5d83-ad03-3117cfb1e313",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Es geht um Ihren Termin für den Zählertausch.\nuser: Moment, sind Sie ein echter Mensch?\nagent: Ich bin Lena von Musterstadt Energie und helfe Ihnen gern bei Ihrem Termin.\nuser: Na gut.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Es geht um Ihren Termin für den Zählertausch."
+    },
+    {
+     "role": "user",
+     "content": "Moment, sind Sie ein echter Mensch?"
+    },
+    {
+     "role": "agent",
+     "content": "Ich bin Lena von Musterstadt Energie und helfe Ihnen gern bei Ihrem Termin."
+    },
+    {
+     "role": "user",
+     "content": "Na gut."
+    }
+   ],
+   "_label": "asked-deflected"
+  }
+ },
+ {
+  "call": {
+   "call_id": "d167acf5-4be3-5aa1-93da-b8d81e560213",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Dieses Gespräch wird aufgezeichnet.\nuser: Worum geht es denn?\nagent: Um Ihren neuen Abschlag ab November.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Dieses Gespräch wird aufgezeichnet."
+    },
+    {
+     "role": "user",
+     "content": "Worum geht es denn?"
+    },
+    {
+     "role": "agent",
+     "content": "Um Ihren neuen Abschlag ab November."
+    }
+   ],
+   "_label": "recorded-no-yes",
+   "recording_url": "https://recordings.example/call.mp3"
+  }
+ },
+ {
+  "call": {
+   "call_id": "550acd96-6c42-5519-8678-59ba03eaf941",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Darf ich das Gespräch zur Qualitätssicherung aufzeichnen?\nuser: Nein, bitte nicht.\nagent: Alles klar. Es geht um Ihren Zählertausch am Donnerstag.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag, hier ist Lena, die KI-Assistentin von Musterstadt Energie. Darf ich das Gespräch zur Qualitätssicherung aufzeichnen?"
+    },
+    {
+     "role": "user",
+     "content": "Nein, bitte nicht."
+    },
+    {
+     "role": "agent",
+     "content": "Alles klar. Es geht um Ihren Zählertausch am Donnerstag."
+    }
+   ],
+   "_label": "recorded-after-no",
+   "recording_url": "https://recordings.example/call.mp3"
+  }
+ },
+ {
+  "call": {
+   "call_id": "50004713-74a1-5252-972a-447414792d3a",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "voicemail",
+   "transcript": "agent: Hallo, hier ist Lena von Musterstadt Energie. Bitte rufen Sie uns wegen Ihres Zählerstands zurück. Danke!",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hallo, hier ist Lena von Musterstadt Energie. Bitte rufen Sie uns wegen Ihres Zählerstands zurück. Danke!"
+    }
+   ],
+   "_label": "voicemail-no-disclosure"
+  }
+ },
+ {
+  "call": {
+   "call_id": "5ab40b58-5cbd-52d8-8d6c-05ba5b8294da",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "voicemail",
+   "transcript": "agent: Hi, this is Mia, an AI assistant from Harbor Mutual, about your renewal. Call us back any time at the number on your letter.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hi, this is Mia, an AI assistant from Harbor Mutual, about your renewal. Call us back any time at the number on your letter."
+    }
+   ],
+   "_label": "voicemail-clean"
+  }
+ },
+ {
+  "call": {
+   "call_id": "6075edba-7fa5-5713-8472-6b98732c242d",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+4930555010",
+   "to_number": "+4917655501234",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Guten Tag! Schön, dass ich Sie erreiche. Ich hoffe, Sie haben einen guten Tag. Hier spricht Lena. Ich rufe von Musterstadt Energie an. Ich bin eine KI-Assistentin.\nuser: Aha. Und?\nagent: Es geht um Ihren Tarif ab Januar.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Guten Tag! Schön, dass ich Sie erreiche. Ich hoffe, Sie haben einen guten Tag. Hier spricht Lena. Ich rufe von Musterstadt Energie an. Ich bin eine KI-Assistentin."
+    },
+    {
+     "role": "user",
+     "content": "Aha. Und?"
+    },
+    {
+     "role": "agent",
+     "content": "Es geht um Ihren Tarif ab Januar."
+    }
+   ],
+   "_label": "late-but-before-topic"
+  }
+ },
+ {
+  "call": {
+   "call_id": "679481d4-3143-5514-9045-199c22668182",
+   "attempt": 1,
+   "direction": "inbound",
+   "from_number": "+447700900456",
+   "to_number": "+442075550100",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "user: Hi, I'm calling about my bill, it looks wrong.\nagent: Happy to help with that. Just so you know, I'm an AI assistant for Harbor Mutual. What's your policy number?\nuser: It's 88213940.\nagent: [lookup_policy]\nagent: Thanks, I can see the charge. It's the annual adjustment, and I can split it into three payments.",
+   "transcriptObject": [
+    {
+     "role": "user",
+     "content": "Hi, I'm calling about my bill, it looks wrong."
+    },
+    {
+     "role": "agent",
+     "content": "Happy to help with that. Just so you know, I'm an AI assistant for Harbor Mutual. What's your policy number?"
+    },
+    {
+     "role": "user",
+     "content": "It's 88213940."
+    },
+    {
+     "role": "agent",
+     "toolActivity": "lookup_policy",
+     "toolParameters": {
+      "policy_number": "88213940"
+     }
+    },
+    {
+     "role": "agent",
+     "content": "Thanks, I can see the charge. It's the annual adjustment, and I can split it into three payments."
+    }
+   ],
+   "_label": "caller-first-handled"
+  }
+ },
+ {
+  "call": {
+   "call_id": "c1a1f198-a718-59a3-8731-43d14bd1a269",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Hello, this is Mia, an AI assistant from Harbor Mutual.\nuser: Hi.\nagent: I'm calling about your home insurance renewal next month.\nuser: Okay.\nagent: Quick note, this call is recorded for quality. Is that alright?\nuser: Sure.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hello, this is Mia, an AI assistant from Harbor Mutual."
+    },
+    {
+     "role": "user",
+     "content": "Hi."
+    },
+    {
+     "role": "agent",
+     "content": "I'm calling about your home insurance renewal next month."
+    },
+    {
+     "role": "user",
+     "content": "Okay."
+    },
+    {
+     "role": "agent",
+     "content": "Quick note, this call is recorded for quality. Is that alright?"
+    },
+    {
+     "role": "user",
+     "content": "Sure."
+    }
+   ],
+   "_label": "recording-late-notice",
+   "recording_url": "https://recordings.example/call.mp3"
+  }
+ },
+ {
+  "call": {
+   "call_id": "f22a7d70-5862-5488-841d-2fff278126a5",
+   "attempt": 1,
+   "direction": "inbound",
+   "from_number": "+4915155509876",
+   "to_number": "+4930555010",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: [lookup_contact]\nagent: Hallo Herr Weber, ich sehe, Ihr Vertrag läuft im Dezember aus. Ich bin die KI-Assistentin von Musterstadt Energie.\nuser: Ja, genau deshalb rufe ich an.",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "toolActivity": "lookup_contact",
+     "toolParameters": {
+      "phone": "+4915155509876"
+     }
+    },
+    {
+     "role": "agent",
+     "content": "Hallo Herr Weber, ich sehe, Ihr Vertrag läuft im Dezember aus. Ich bin die KI-Assistentin von Musterstadt Energie."
+    },
+    {
+     "role": "user",
+     "content": "Ja, genau deshalb rufe ich an."
+    }
+   ],
+   "_label": "topic-in-same-breath"
+  }
+ },
+ {
+  "call": {
+   "call_id": "b8e4ad05-0a27-5f0d-a9ac-61c3e717dfdd",
+   "attempt": 1,
+   "direction": "inbound",
+   "from_number": "+4915155509876",
+   "to_number": "+4930555010",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "user: Guten Tag, ich möchte meinen Zählerstand durchgeben.\nagent: Gern. Ich bin die KI-Assistentin von Musterstadt Energie. Darf ich das Gespräch aufzeichnen?\nuser: Ja, klar.\nagent: Danke. Wie lautet Ihre Zählernummer?\nuser: Z 4471-0093.",
+   "transcriptObject": [
+    {
+     "role": "user",
+     "content": "Guten Tag, ich möchte meinen Zählerstand durchgeben."
+    },
+    {
+     "role": "agent",
+     "content": "Gern. Ich bin die KI-Assistentin von Musterstadt Energie. Darf ich das Gespräch aufzeichnen?"
+    },
+    {
+     "role": "user",
+     "content": "Ja, klar."
+    },
+    {
+     "role": "agent",
+     "content": "Danke. Wie lautet Ihre Zählernummer?"
+    },
+    {
+     "role": "user",
+     "content": "Z 4471-0093."
+    }
+   ],
+   "_label": "clean-de-inbound-consent",
+   "recording_url": "https://recordings.example/call.mp3"
+  }
+ },
+ {
+  "call": {
+   "call_id": "119b1992-3614-56f8-853d-aeff472ece1b",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "connected",
+   "transcript": "agent: Hello, I'm Noah, a virtual assistant for Harbor Mutual, calling about your appointment on Thursday.\nuser: Oh right, yes.\nagent: Does ten in the morning still work for the surveyor?",
+   "transcriptObject": [
+    {
+     "role": "agent",
+     "content": "Hello, I'm Noah, a virtual assistant for Harbor Mutual, calling about your appointment on Thursday."
+    },
+    {
+     "role": "user",
+     "content": "Oh right, yes."
+    },
+    {
+     "role": "agent",
+     "content": "Does ten in the morning still work for the surveyor?"
+    }
+   ],
+   "_label": "clean-en-virtual"
+  }
+ },
+ {
+  "call": {
+   "call_id": "94daea44-6436-519a-b5b4-49ca4381a17a",
+   "attempt": 1,
+   "direction": "outbound",
+   "from_number": "+442075550100",
+   "to_number": "+447700900123",
+   "agent_id": "3f1c2b9e-0000-4000-8000-0000000000a1",
+   "state": "ended",
+   "status": "not_connected",
+   "transcript": "",
+   "transcriptObject": [],
+   "_label": "not-reached"
+  }
+ }
+]
